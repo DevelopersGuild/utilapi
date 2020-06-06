@@ -5,9 +5,11 @@ const bodyParser = require("body-parser");
 const Firestore = require("@google-cloud/firestore");
 const PROJECTID = "winter-runway-279100";
 const COLLECTION_NAME = "codesnippets";
+
 const firestore = new Firestore({
   projectId: PROJECTID,
   timestampsInSnapshots: true,
+  keyFilename: "./winter-runway-279100-3998bbcc8fa0.json",
 });
 
 const app = express();
